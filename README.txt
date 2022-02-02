@@ -7,6 +7,26 @@ I want to add the Dockerfile for the application itself
 
 
 
+Right now you can post and get and update and delete a workout 
+POSTing to : localhost:3007/workout/
+with a body of 
+
+{
+    "Name":"Push Ups",
+    "Muscle":"Tricep and Chest",
+    "Reps":"10"
+}
+
+will create a workout 
+
+and a get on localhost:3007/workout/
+
+if you go inside of my pkg folder you can see the structure I was going for 
+see the list of routes in pkg/routes/workout-routes.go
+
+the controllers do most of the heavy lifting 
+
+
 Packages that need to be installed
 
 "gorm.io/driver/postgres"
