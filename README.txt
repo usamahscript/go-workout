@@ -6,6 +6,14 @@ I want to improve postgresql dump file to pre populate users w/ workouts
 I want to add the Dockerfile for the application itself
 
 
+Packages that need to be installed with go get:
+
+"gorm.io/driver/postgres"
+"gorm.io/gorm"
+
+cmd/main contains the file that you actually want to run 
+so like :
+go run main.go
 
 Right now you can post and get and update and delete a workout 
 POSTing to : localhost:3007/workout/
@@ -27,10 +35,7 @@ see the list of routes in pkg/routes/workout-routes.go
 the controllers do most of the heavy lifting 
 
 
-Packages that need to be installed
 
-"gorm.io/driver/postgres"
-"gorm.io/gorm"
 
 
 # Goals for Backend
